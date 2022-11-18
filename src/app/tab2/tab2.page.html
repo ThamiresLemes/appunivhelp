@@ -1,17 +1,45 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title class="titulo"> Cadastre-se </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <ion-card>
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/OSMKKT3.png" />
+        </ion-thumbnail>
+        <ion-label>Sou Universitário</ion-label>
+      </ion-item>
+    </ion-card>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+    <ion-card>
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/MIMGOFF.png" />
+        </ion-thumbnail>
+        <ion-label>Quero ser instrutor</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card>
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/73zsJje.png" />
+        </ion-thumbnail>
+        <ion-label>Faça parte do projeto</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card [routerLink]="['/tabs/tab1']">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/5y5fzog.png" />
+        </ion-thumbnail>
+        <ion-label>Voltar</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
 </ion-content>

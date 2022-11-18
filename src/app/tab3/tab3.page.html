@@ -1,17 +1,18 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-title class="titulo"> Fale conosco </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <ion-card [routerLink]="['/tabs/tab1']">
+      <ion-item lines="none">
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/5y5fzog.png" />
+        </ion-thumbnail>
+        <ion-label>Voltar</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
 </ion-content>

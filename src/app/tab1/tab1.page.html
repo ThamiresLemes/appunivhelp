@@ -1,17 +1,41 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
+    <ion-title class="titulo"> </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div class="conteudo">
+    <img
+      class="img-item"
+      src="https://i.imgur.com/ZpL0v3r.png"
+      alt="Imagem de logo do projeto"
+    />
+    <p>Bem vindo Universitário! Aqui começa sua jornada!</p>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+    <ion-card [routerLink]="['/tabs/tab2']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/3V3Ixoa.png" />
+        </ion-thumbnail>
+        <ion-label>Acesso ao Fórum de dúvidas</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card [routerLink]="['/tabs/tab2']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/rXrangB.png" />
+        </ion-thumbnail>
+        <ion-label>Cursos Online</ion-label>
+      </ion-item>
+    </ion-card>
+    <ion-card [routerLink]="['/tabs/tab3']">
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://i.imgur.com/uRi6uJM.png" />
+        </ion-thumbnail>
+        <ion-label>Fale Conosco</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
 </ion-content>
